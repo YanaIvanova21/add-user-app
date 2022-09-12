@@ -1,0 +1,21 @@
+.card {
+  width: auto;
+  margin: 3% 25% auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 48em) and (max-width: 63em) {
+  .card {
+    width: auto;
+    margin: 3% 15% auto;
+  }
+}
+
+@media screen and (max-width: 47em) {
+  .card {
+    width: auto;
+    margin: 3% 3% auto;
+  }
+}

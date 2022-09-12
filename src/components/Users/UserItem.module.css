@@ -1,0 +1,9 @@
+.useritemcontainer {
+  border: 1px solid;
+  border-color: #ccc;
+}
+
+p {
+  font-weight: 500;
+  margin: 0;
+}
