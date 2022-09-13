@@ -5,7 +5,14 @@ import classes from "./UsersList.module.css";
 const UsersList = (props) => {
   return (
     <div className={classes.userslistcontainer}>
-      <UserItem>{props.children}</UserItem>
+      {props.users.map((user) => {
+        console.log(user);
+        return (
+          <UserItem userName={user.userName} age={user.age} key={user.id}>
+            {props.children}
+          </UserItem>
+        );
+      })}
     </div>
   );
 };

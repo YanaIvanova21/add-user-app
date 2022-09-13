@@ -1,36 +1,26 @@
 import React from "react";
-import classes from "./AddUserForm.module.css";
+import "./AddUserForm.module.css";
 
-const AddUserForm = () => {
+const AddUserForm = (props) => {
   const userFormHandler = (e) => {
     e.preventDefault();
-    return console.log("Submited");
-  };
+    const enteredUserData = {
+      enteredUserName: e.target.userName.value,
+      enteredAge: e.target.age.value,
+    };
 
-  const userNameChangeHandler = (event) => {
-    const userName = event.target.value;
-    return console.log(userName);
-  };
-
-  const ageChangeHandler = (event) => {
-    const age = event.target.value;
-    return console.log(age);
+    props.onUserDataAdded(enteredUserData);
   };
 
   return (
     <form onSubmit={userFormHandler}>
       <div>
         <label>Username</label>
-        <input type="text" onChange={userNameChangeHandler}></input>
+        <input type="text" name="userName"></input>
       </div>
       <div>
         <label>Age (Years)</label>
-        <input
-          type="number"
-          min="1"
-          step="1"
-          onChange={ageChangeHandler}
-        ></input>
+        <input name="age" type="number" min="1" step="1"></input>
       </div>
       <div>
         <button type="submit">Add User</button>

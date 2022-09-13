@@ -1,6 +1,8 @@
 .useritemcontainer {
   border: 1px solid;
   border-color: #ccc;
+  margin-top: 0.5rem;
+  padding: 0.3125rem;
 }
 
 p {

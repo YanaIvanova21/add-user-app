@@ -1,10 +1,14 @@
 import React from "react";
 import classes from "./UserItem.module.css";
 
-const UserItem = () => {
+const UserItem = (props) => {
   return (
     <div className={classes.useritemcontainer}>
-      <p>This is paragraph.</p>
+      <p>
+        {`${props.userName} (${
+          props.age > 1 ? props.age + " years old" : props.age + " year old"
+        })`}
+      </p>
     </div>
   );
 };
