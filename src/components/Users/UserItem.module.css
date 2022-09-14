@@ -1,11 +1,11 @@
-.useritemcontainer {
+.userItemContainer {
   border: 1px solid;
   border-color: #ccc;
   margin-top: 0.5rem;
   padding: 0.3125rem;
 }
 
-p {
+.userItemContainerText {
   font-weight: 500;
   margin: 0;
 }

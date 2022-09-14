@@ -3,8 +3,8 @@ import classes from "./UserItem.module.css";
 
 const UserItem = (props) => {
   return (
-    <div className={classes.useritemcontainer}>
-      <p>
+    <div className={classes.userItemContainer}>
+      <p className={classes.userItemContainerText}>
         {`${props.userName} (${
           props.age > 1 ? props.age + " years old" : props.age + " year old"
         })`}

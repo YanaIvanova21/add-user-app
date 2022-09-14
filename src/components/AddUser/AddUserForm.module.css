@@ -1,17 +1,17 @@
-form {
+.addUserForm {
   width: 100%;
   height: auto;
   box-sizing: border-box;
   font-weight: 700;
 }
 
-label {
+.addUserFormLabel {
   width: 100%;
   margin: 0.3125rem 0;
   display: inline-block;
 }
 
-input {
+.addUserFormInput {
   width: 100%;
   margin: 0.3125rem 0;
   display: inline-block;
@@ -19,7 +19,7 @@ input {
   box-sizing: border-box;
 }
 
-button {
+.addUserFormSubmitButton {
   width: 20%;
   background-color: #40005d;
   border: 1px solid #40005d;
@@ -31,13 +31,13 @@ button {
   font-size: 100%;
 }
 
-button:hover {
+.addUserFormSubmitButton:hover {
   background-color: #510674;
   border-color: #510674;
 }
 
 @media screen and (max-width: 63em) {
-  button {
+  .addUserFormSubmitButton {
     width: 100%;
   }
 }
