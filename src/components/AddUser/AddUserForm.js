@@ -28,7 +28,9 @@ const AddUserForm = (props) => {
   return (
     <form className={classes.addUserForm} onSubmit={userFormHandler}>
       <div>
-        <label className={classes.addUserFormLabel}>Username</label>
+        <label htmlFor="userName" className={classes.addUserFormLabel}>
+          Username
+        </label>
         <input
           className={classes.addUserFormInput}
           type="text"
@@ -38,7 +40,9 @@ const AddUserForm = (props) => {
         ></input>
       </div>
       <div>
-        <label className={classes.addUserFormLabel}>Age (Years)</label>
+        <label htmlFor="age" className={classes.addUserFormLabel}>
+          Age (Years)
+        </label>
         <input
           className={classes.addUserFormInput}
           name="age"

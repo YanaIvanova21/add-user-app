@@ -14,13 +14,13 @@ function App() {
   const onUserDataAddedHandler = (enteredUserData) => {
     const { enteredUserName, enteredAge } = enteredUserData;
 
-    if (enteredUserName === "" || enteredAge === "") {
+    if (enteredUserName.trim().length === 0 || enteredAge.trim().length === 0) {
       setValid(false);
       setErrorNo(1);
       return;
     }
 
-    if (enteredAge <= 0) {
+    if (enteredAge < 1) {
       setValid(false);
       setErrorNo(2);
       return;
