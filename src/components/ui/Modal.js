@@ -2,13 +2,13 @@ import React from "react";
 import classes from "./Modal.module.css";
 
 const Modal = (props) => {
-  const onClickCloseButton = () => {
+  const onClickClose = () => {
     props.onModalClose();
   };
 
   return (
     <div className={`${classes[""]} ${props.error ? classes.error : ""}`}>
-      <div className={classes.darkBackGround}>
+      <div className={classes.darkBackGround} onClick={onClickClose}>
         <div className={classes.modalWindow}>
           <div className={classes.modalWindowHeader}>
             <h1 className={classes.modalWindowHeaderText}>Invalid input</h1>
@@ -19,7 +19,7 @@ const Modal = (props) => {
               <button
                 type="button"
                 className={classes.closeButton}
-                onClick={onClickCloseButton}
+                onClick={onClickClose}
               >
                 Okay
               </button>
